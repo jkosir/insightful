@@ -40,3 +40,7 @@ Roadmap
 * More coverage
 * Actual jasmine tests
 * Remove tracking code's jQuery dependency
+
+Demo
+====
+Demo is available at [http://insightful-demo.herokuapp.com/](http://insightful-demo.herokuapp.com/)
