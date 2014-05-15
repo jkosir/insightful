@@ -1,4 +1,4 @@
-[![Build Status](https://magnum.travis-ci.com/dasf/tracker-dev.svg?token=Ym5kPFesDeazWVWSJchJ&branch=master)](https://magnum.travis-ci.com/dasf/tracker-dev)
+[![Build Status](https://travis-ci.org/dasf/insightful.svg?branch=master)](https://travis-ci.org/dasf/insightful)
 
 Insightful
 ==========

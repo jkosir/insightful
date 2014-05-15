@@ -96,7 +96,8 @@ WSGI_APPLICATION = 'tracker.wsgi.application'
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 # use sqlite3 in local (development) environments or configure from DATABASE_URL if present (e.g. on heroku)
 # WARNING: In databases other than PostgreSQL group by date won't work correctly
-
+if not 'DATABASE_URL' in os.environ:
+    os.environ['DATABASE_URL'] = 'postgres://postgres@localhost/insightful'
 DATABASES = {'default':  dj_database_url.config()}
 
 # Internationalization
