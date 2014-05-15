@@ -1,0 +1,91 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+
+{% block title %}<title ng-bind="'Insightful &mdash; ' + title">Insightful</title>{% endblock %}
+{% block base %}
+    <base href="{% url 'app' website.pk %}"/>
+{% endblock %}
+
+
+{% block css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'core/css/simple-sidebar.css' %}"/>
+    <link rel="stylesheet" href="{% static 'core/css/sidebar-custom.css' %}"/>
+    <link rel="stylesheet" href="{% static 'core/css/loading-bar.css' %}"/>
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap-multiselect.css' %}"/>
+    <link rel="stylesheet" href="{% static 'core/css/flags.css' %}"/>
+{% endblock %}
+
+{% block cdnjs %}
+    {{ block.super }}
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-cookies.min.js"></script>
+{% endblock %}
+
+{% block js %}
+    {{ block.super }}
+    <script src="{% static 'core/lib/bootstrap-multiselect.js' %}"></script>
+    <script src="{% static 'core/lib/ui-bootstrap-tpls-0.11.0.min.js' %}"></script>
+    <script src="{% static 'core/lib/angular-ui-router.min.js' %}"></script>
+    <script src="{% static 'core/lib/highcharts.js' %}"></script>
+    <script src="{% static 'core/lib/highcharts-ng.js' %}"></script>
+
+    <script src="{% static 'core/js/highcharts-config.js' %}"></script>
+    <script src="{% static 'core/lib/loading-bar.js' %}"></script>
+
+    <!-- Angular app -->
+    <script src="{% static 'core/angular/app.js' %}"></script>
+    <script src="{% static 'core/angular/filters.js' %}"></script>
+    <script src="{% static 'monthlychart/angular/directives.js' %}"></script>
+    <script src="{% static 'monthlychart/angular/services.js' %}"></script>
+    <script src="{% static 'overview/angular/controllers.js' %}"></script>
+    <script src="{% static 'engagement/angular/controllers.js' %}"></script>
+    <script src="{% static 'visitors/angular/controllers.js' %}"></script>
+    <script src="{% static 'content/angular/controllers.js' %}"></script>
+
+    {% include 'core/constants.html' %}
+{% endblock %}
+
+{% block content %}
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand" ng-click="navbarCollapse = !navbarCollapse">
+
+                    <a href="javascript:void(0)" >{{ website.name }} <span class="caret"></span></a>
+                </li>
+                <li collapse="navbarCollapse" class="inner"><a href="javascript:void(0)">{{ website.url }}</a></li>
+                <li collapse="navbarCollapse" class="inner"><a href="javascript:void(0)">{{ website.timezone }}</a></li>
+                <li collapse="navbarCollapse" class="inner"><a href="{% url 'accounts:edit_website' website.pk %}">Edit</a></li>
+                <li ui-sref-active="active"><a ui-sref="overview">Overview</a>
+                </li>
+                <li ui-sref-active="active"><a ui-sref="engagement">Engagement</a>
+                </li>
+                <li ui-sref-active="active"><a ui-sref="visitors">Visitors</a>
+                </li>
+                <li ui-sref-active="active"><a ui-sref="content">Content</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper" ui-view>
+        </div>
+
+    </div>
+{% endblock %}
+
+{% comment %}
+Omittig data-toggle="dropdown" on <a>, makes sure only ui.bootstrap dropdown is used and not bootstrap's native
+Using both results in a double click required to open the dropdown menu
+{% endcomment %}
+
+{% block nav-dropdown %}
+    <a href="javascript:void(0)" class="dropdown-toggle">
+        Welcome back, {{ request.user.email }}
+        <b class="caret"></b>
+    </a>
+{% endblock %}

@@ -1,0 +1,75 @@
+<!-- Keep all page content within the page-content inset div! -->
+<div class="page-content inset">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Last 30 days</h3>
+                </div>
+                <div class="panel-body">
+                    <div monthly-chart ng-series="page_views, visits">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Device</h3>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        Desktop
+                        <span class="badge">{{ 100 - data.mobile|number:0 }} %</span>
+                    </li>
+                    <li class="list-group-item">
+                        Mobile
+                        <span class="badge">{{ data.mobile|number:0 }} %</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Today</h3>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="badge">{{ data.views }}</span>
+                        Page views
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">{{ data.visitors }}</span>
+                        Visitors
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">{{ data.unique_visitors }}</span>
+                        Unique visitors
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Top pages</h3>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="page in data.top_pages">
+                        <span class="badge">{{ page.count }}</span>
+                        {{ page.path }}
+                    </li>
+                    <li class="list-group-item" ng-show="!data.top_pages.length">
+                        No pages viewed yet
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

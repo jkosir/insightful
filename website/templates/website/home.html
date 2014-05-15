@@ -1,0 +1,47 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+{% block css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'core/css/cover2.css' %}"/>
+{% endblock %}
+
+{% block navbar %}
+    {# No navbar #}
+{% endblock %}
+
+{% block content %}
+    <div class="container marketing">
+
+        <div class="masthead clearfix">
+            <div class="inner">
+                <h3 class="masthead-brand">Insightful</h3>
+                <ul class="nav masthead-nav">
+                    <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'learnmore' %}">Learn more</a></li>
+                    <li><a href="{% url 'accounts:website_list' %}">Reports</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="jumbotron" style="text-align: center; margin-top: 100px">
+
+            <div class="inner cover" style="width: 700px; margin-left:auto;margin-right:auto">
+                <h1 class="cover-heading" >Mobile first web analytics</h1>
+                <br/>
+
+                <p style="font-size: 26px; ">Insightful is an open source web analytics platform
+                    that provides valuable analysis of how customers use your websites.</p>
+                <br/>
+
+                <p class="lead">
+                    <a href="{% url 'learnmore' %}" class="btn btn-lg btn-primary" style="width: 300px">Learn more</a>
+                </p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+{% endblock %}

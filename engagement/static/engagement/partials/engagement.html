@@ -1,0 +1,35 @@
+<!-- Keep all page content within the page-content inset div! -->
+<div class="page-content inset">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Last 30 days</h3>
+                </div>
+                <div class="panel-body">
+                    <div monthly-chart ng-series="avg_duration, avg_active_duration">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4" ng-repeat="config in pieChartConfigs">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        {{ config.0 }}
+                        <span class="glyphicon glyphicon-question-sign pull-right"
+                              tooltip-placement="left"
+                              tooltip="Average content interaction time in last 5 days">
+                        </span>
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <highchart id="{{ config.0 }}Chart" config="config.1"></highchart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

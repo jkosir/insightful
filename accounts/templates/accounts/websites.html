@@ -1,0 +1,37 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+            {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-dismissable alert-success">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <strong>{{ message }}</strong>
+                </div>
+                {% endfor %}
+            {% endif %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">My websites</h3>
+                    </div>
+                    <ul class="list-group">
+                        {% for website in websites %}
+                            <a class="list-group-item" href="{% url 'app' website.pk %}">{{ website.name }}
+                                <span class="badge">{{ website.view_count_today }} views today</span>
+                            </a>
+                        {% endfor %}
+                        <a class="list-group-item" href="{% url 'accounts:add_website' %}"><span
+                                class="glyphicon glyphicon-plus-sign"></span></a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

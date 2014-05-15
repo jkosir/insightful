@@ -1,0 +1,15 @@
+<script>
+    analyticsApp.constant('constants', {
+        staticUrl: {{ static_url }},
+        website: {{ website_json }},
+        series: {{ series }},
+        // urls for json views
+        urls: {
+            overview: '{% url 'api:overview' website.pk %}',
+            engagement: '{% url 'api:engagement' website.pk %}',
+            visitors: '{% url 'api:visitors' website.pk %}',
+            content: '{% url 'api:content' website.pk %}',
+            monthlychart: '{% url 'api:monthlychart' website.pk %}'
+        }
+    });
+</script>

@@ -1,0 +1,136 @@
+<!-- Keep all page content within the page-content inset div! -->
+<div class="page-content inset">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Last 30 days</h3>
+                </div>
+                <div class="panel-body">
+                    <div monthly-chart ng-series="page_views, visits">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="panel panel-default panel-visitors">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Latest visitors</h3>
+                </div>
+                <ul class="list-group" ng-repeat="visitor in visitors">
+                    <li class="list-group-item">
+                        {{ visitor.timestamp|date:'EEEE d. MMM, HH:mm' }}
+                        <span class="flag" ng-class="['flag-' + visitor.country.0]"
+                              tooltip="{{ visitor.country.1 }}"
+                              tooltip-placement="top"
+                              ng-show="visitor.country.0 != 'unknown'"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <td>{{ visitor.browser }} on {{ visitor.os }}</td>
+                    </li>
+                    <li class="list-group-item">
+                        Pages:
+                        <span ng-repeat="page in visitor.pages track by $index"
+                              class="glyphicon glyphicon-file margin-right"
+                              tooltip="{{ page }}"
+                              tooltip-placement="bottom">
+                        </span>
+                    </li>
+                    <li class="list-group-item">
+                        Total time
+                        <span class="badge">{{ visitor.total_time|secondsdisplay }}</span>
+                    </li>
+                    <li class="list-group-item">
+                        Total engaged time
+                        <span class="badge">{{ visitor.active_time|secondsdisplay }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{ report.date|date:'EEEE d. MMM' }}</h3>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        Page views
+                        <span class="badge">{{ report.pageviews }}</span>
+                    </li>
+                    <li class="list-group-item">
+                        Visitors
+                        <span class="badge">{{ report.visitors }}</span>
+                    </li>
+                    <li class="list-group-item">
+                        Unique visitors
+                        <span class="badge">{{ report.unique_visitors }}</span>
+                    </li>
+                    <li class="list-group-item">
+                        Average visit duration
+                        <span class="badge">{{ report.avg_time|secondsdisplay }}</span>
+                    </li>
+                    <li class="list-group-item">
+                        Average engaged time
+                        <span class="badge">{{ report.avg_engagement|secondsdisplay }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Countries</h3>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="country in countries">
+                        <span class="flag"
+                              ng-class="['flag-' + country.code]"
+                              ng-show="country.country_code != 'unknown'"></span>
+                        {{ country.country }}
+                        <span class="badge">{{ country.count }}</span>
+                    </li>
+                    <li class="list-group-item" ng-show="countries.length == 0">
+                        No visits in last 5 days
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Inbound links</h3>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="link in inbound">
+                        {{ link.0 }}
+                        <span class="badge">{{ link.1 }}</span>
+                    </li>
+                    <li class="list-group-item" ng-show="inbound.length == 0">
+                        No visits in last 5 days
+                    </li>
+
+                </ul>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Outbound links</h3>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="link in outbound">
+                        {{ link.0 }}
+                        <span class="badge">{{ link.1 }}</span>
+                    </li>
+                    <li class="list-group-item" ng-show="outbound.length == 0">
+                        No visits in last 5 days
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

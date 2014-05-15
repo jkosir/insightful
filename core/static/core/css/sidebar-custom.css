@@ -1,0 +1,25 @@
+#wrapper {
+    margin-top: -20px;
+}
+.sidebar-nav li.active > a {
+    color: #fff;
+}
+.sidebar-nav li.active > a:after {
+    /* caret */
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    content: " ";
+    margin-top: 14px;
+    line-height: normal;
+    border-right: 6px solid;
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    color: #fff;
+}
+.sidebar-nav li.inner > a {
+    background-color: #000;
+}

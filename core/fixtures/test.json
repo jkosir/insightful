@@ -1,0 +1,1997 @@
+[
+    {
+        "pk": 1,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "logentry",
+            "name": "log entry",
+            "app_label": "admin"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "permission",
+            "name": "permission",
+            "app_label": "auth"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "group",
+            "name": "group",
+            "app_label": "auth"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "contenttype",
+            "name": "content type",
+            "app_label": "contenttypes"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "session",
+            "name": "session",
+            "app_label": "sessions"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "keymap",
+            "name": "key map",
+            "app_label": "django_select2"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "website",
+            "name": "website",
+            "app_label": "core"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "trackeruser",
+            "name": "tracker user",
+            "app_label": "core"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "session",
+            "name": "session",
+            "app_label": "core"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "pageview",
+            "name": "page view",
+            "app_label": "core"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "trackedcontent",
+            "name": "tracked content",
+            "app_label": "core"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "contentinteraction",
+            "name": "content interaction",
+            "app_label": "core"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "analyticsuser",
+            "name": "analytics user",
+            "app_label": "accounts"
+        }
+    },
+    {
+        "pk": "1e6tjei9ehksqkq3jtdxiicauplazjwf",
+        "model": "sessions.session",
+        "fields": {
+            "expire_date": "2014-05-21T20:51:14.103Z",
+            "session_data": "YmViMjg3MDM1ZjAxMTMzNTBiMGU2OTNjMjZmYTFjNjZiMTNlZmVhNTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+        }
+    },
+    {
+        "pk": "b9oce4uu8yckk9zqj3tayuo6t2y4ogis",
+        "model": "sessions.session",
+        "fields": {
+            "expire_date": "2014-05-27T08:02:27.147Z",
+            "session_data": "YmViMjg3MDM1ZjAxMTMzNTBiMGU2OTNjMjZmYTFjNjZiMTNlZmVhNTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+        }
+    },
+    {
+        "pk": "cjxnxggck3xajwwieou6jvupsug3yy6f",
+        "model": "sessions.session",
+        "fields": {
+            "expire_date": "2014-05-22T13:04:07.115Z",
+            "session_data": "YmViMjg3MDM1ZjAxMTMzNTBiMGU2OTNjMjZmYTFjNjZiMTNlZmVhNTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+        }
+    },
+    {
+        "pk": 1,
+        "model": "core.trackeruser",
+        "fields": {
+            "uuid": "a7b80c53-e50a-4faf-d271-1a29d6185199",
+            "remote_addr": "127.0.0.1",
+            "mobile": false,
+            "http_agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0",
+            "country_code": "unknown",
+            "country_name": "Unknown"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "core.trackeruser",
+        "fields": {
+            "uuid": "eac68166-4961-40f0-f979-f874da5ba931",
+            "remote_addr": "127.0.0.1",
+            "mobile": false,
+            "http_agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0",
+            "country_code": "unknown",
+            "country_name": "Unknown"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "core.session",
+        "fields": {
+            "website": 1,
+            "timestamp": "2014-05-07T20:53:45.481Z",
+            "user": 1
+        }
+    },
+    {
+        "pk": 2,
+        "model": "core.session",
+        "fields": {
+            "website": 1,
+            "timestamp": "2014-05-07T22:05:42.449Z",
+            "user": 1
+        }
+    },
+    {
+        "pk": 3,
+        "model": "core.session",
+        "fields": {
+            "website": 1,
+            "timestamp": "2014-05-07T22:47:31.796Z",
+            "user": 1
+        }
+    },
+    {
+        "pk": 4,
+        "model": "core.session",
+        "fields": {
+            "website": 1,
+            "timestamp": "2014-05-08T08:23:17.357Z",
+            "user": 1
+        }
+    },
+    {
+        "pk": 5,
+        "model": "core.session",
+        "fields": {
+            "website": 1,
+            "timestamp": "2014-05-08T12:07:38.454Z",
+            "user": 1
+        }
+    },
+    {
+        "pk": 6,
+        "model": "core.session",
+        "fields": {
+            "website": 1,
+            "timestamp": "2014-05-08T12:53:31.207Z",
+            "user": 1
+        }
+    },
+    {
+        "pk": 7,
+        "model": "core.session",
+        "fields": {
+            "website": 1,
+            "timestamp": "2014-05-08T15:13:32.198Z",
+            "user": 1
+        }
+    },
+    {
+        "pk": 8,
+        "model": "core.session",
+        "fields": {
+            "website": 1,
+            "timestamp": "2014-05-08T21:29:49.645Z",
+            "user": 1
+        }
+    },
+    {
+        "pk": 9,
+        "model": "core.session",
+        "fields": {
+            "website": 1,
+            "timestamp": "2014-05-09T11:35:05.295Z",
+            "user": 1
+        }
+    },
+    {
+        "pk": 10,
+        "model": "core.session",
+        "fields": {
+            "website": 1,
+            "timestamp": "2014-05-10T17:59:44.518Z",
+            "user": 2
+        }
+    },
+    {
+        "pk": 11,
+        "model": "core.session",
+        "fields": {
+            "website": 1,
+            "timestamp": "2014-05-12T20:07:16.289Z",
+            "user": 2
+        }
+    },
+    {
+        "pk": 12,
+        "model": "core.session",
+        "fields": {
+            "website": 1,
+            "timestamp": "2014-05-12T20:46:03.816Z",
+            "user": 2
+        }
+    },
+    {
+        "pk": 1,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T20:53:45.485Z",
+            "path": "/test/",
+            "duration": 5,
+            "session": 1,
+            "active_duration": 5
+        }
+    },
+    {
+        "pk": 2,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T20:53:51.023Z",
+            "path": "/test/",
+            "duration": 2,
+            "session": 1,
+            "active_duration": 2
+        }
+    },
+    {
+        "pk": 3,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T20:53:53.679Z",
+            "path": "/test/",
+            "duration": 1,
+            "session": 1,
+            "active_duration": 1
+        }
+    },
+    {
+        "pk": 4,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T20:53:55.344Z",
+            "path": "/test/",
+            "duration": 785,
+            "session": 1,
+            "active_duration": 2
+        }
+    },
+    {
+        "pk": 5,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T21:07:01.293Z",
+            "path": "/test/",
+            "duration": 50,
+            "session": 1,
+            "active_duration": 9
+        }
+    },
+    {
+        "pk": 6,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T21:07:51.707Z",
+            "path": "/test/",
+            "duration": 24,
+            "session": 1,
+            "active_duration": 10
+        }
+    },
+    {
+        "pk": 7,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T21:08:16.644Z",
+            "path": "/test/",
+            "duration": 93,
+            "session": 1,
+            "active_duration": 10
+        }
+    },
+    {
+        "pk": 8,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T21:09:49.949Z",
+            "path": "/test/",
+            "duration": 30,
+            "session": 1,
+            "active_duration": 20
+        }
+    },
+    {
+        "pk": 9,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T21:10:19.989Z",
+            "path": "/test/",
+            "duration": 0,
+            "session": 1,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 10,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T22:05:42.452Z",
+            "path": "/test/",
+            "duration": 23,
+            "session": 2,
+            "active_duration": 3
+        }
+    },
+    {
+        "pk": 11,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T22:06:05.477Z",
+            "path": "/test/",
+            "duration": 0,
+            "session": 2,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 12,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T22:47:31.800Z",
+            "path": "/test/",
+            "duration": 9,
+            "session": 3,
+            "active_duration": 2
+        }
+    },
+    {
+        "pk": 13,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T22:47:41.434Z",
+            "path": "/test/",
+            "duration": 3,
+            "session": 3,
+            "active_duration": 2
+        }
+    },
+    {
+        "pk": 14,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T22:47:44.632Z",
+            "path": "/test/",
+            "duration": 1178,
+            "session": 3,
+            "active_duration": 2
+        }
+    },
+    {
+        "pk": 15,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T23:07:23.257Z",
+            "path": "/test/",
+            "duration": 393,
+            "session": 3,
+            "active_duration": 14
+        }
+    },
+    {
+        "pk": 16,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T23:13:56.488Z",
+            "path": "/test/",
+            "duration": 20,
+            "session": 3,
+            "active_duration": 13
+        }
+    },
+    {
+        "pk": 17,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-07T23:14:16.702Z",
+            "path": "/test/",
+            "duration": 0,
+            "session": 3,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 18,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T08:23:17.367Z",
+            "path": "/test/",
+            "duration": 0,
+            "session": 4,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 19,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T12:07:38.457Z",
+            "path": "/test/",
+            "duration": 0,
+            "session": 5,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 20,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T12:53:31.210Z",
+            "path": "/test/",
+            "duration": 2,
+            "session": 6,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 21,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T12:53:33.225Z",
+            "path": "/test/",
+            "duration": 19,
+            "session": 6,
+            "active_duration": 3
+        }
+    },
+    {
+        "pk": 22,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T12:53:52.621Z",
+            "path": "/test/",
+            "duration": 3,
+            "session": 6,
+            "active_duration": 1
+        }
+    },
+    {
+        "pk": 23,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T12:53:55.994Z",
+            "path": "/test/",
+            "duration": 2,
+            "session": 6,
+            "active_duration": 1
+        }
+    },
+    {
+        "pk": 24,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T12:53:58.325Z",
+            "path": "/test/",
+            "duration": 37,
+            "session": 6,
+            "active_duration": 2
+        }
+    },
+    {
+        "pk": 25,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T12:54:35.439Z",
+            "path": "/test2/",
+            "duration": 1,
+            "session": 6,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 26,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T12:54:37.053Z",
+            "path": "/test/",
+            "duration": 1,
+            "session": 6,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 27,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T12:54:38.343Z",
+            "path": "/test2/",
+            "duration": 0,
+            "session": 6,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 28,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T15:13:32.205Z",
+            "path": "/test/",
+            "duration": 6,
+            "session": 7,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 29,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T15:13:38.781Z",
+            "path": "/test2/",
+            "duration": 0,
+            "session": 7,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 30,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:29:49.650Z",
+            "path": "/test/",
+            "duration": 10,
+            "session": 8,
+            "active_duration": 10
+        }
+    },
+    {
+        "pk": 31,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:30:00.402Z",
+            "path": "/test/",
+            "duration": 261,
+            "session": 8,
+            "active_duration": 9
+        }
+    },
+    {
+        "pk": 32,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:34:21.911Z",
+            "path": "/test/",
+            "duration": 16,
+            "session": 8,
+            "active_duration": 10
+        }
+    },
+    {
+        "pk": 33,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:34:38.679Z",
+            "path": "/test/",
+            "duration": 76,
+            "session": 8,
+            "active_duration": 5
+        }
+    },
+    {
+        "pk": 34,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:35:54.807Z",
+            "path": "/test/",
+            "duration": 3,
+            "session": 8,
+            "active_duration": 3
+        }
+    },
+    {
+        "pk": 35,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:35:58.732Z",
+            "path": "/test/",
+            "duration": 4,
+            "session": 8,
+            "active_duration": 3
+        }
+    },
+    {
+        "pk": 36,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:36:02.948Z",
+            "path": "/test/",
+            "duration": 110,
+            "session": 8,
+            "active_duration": 6
+        }
+    },
+    {
+        "pk": 37,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:37:53.935Z",
+            "path": "/test/",
+            "duration": 6,
+            "session": 8,
+            "active_duration": 4
+        }
+    },
+    {
+        "pk": 38,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:38:00.269Z",
+            "path": "/test/",
+            "duration": 4,
+            "session": 8,
+            "active_duration": 3
+        }
+    },
+    {
+        "pk": 39,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:38:04.796Z",
+            "path": "/test/",
+            "duration": 20,
+            "session": 8,
+            "active_duration": 2
+        }
+    },
+    {
+        "pk": 40,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:38:25.124Z",
+            "path": "/test/",
+            "duration": 9,
+            "session": 8,
+            "active_duration": 8
+        }
+    },
+    {
+        "pk": 41,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:38:34.398Z",
+            "path": "/test/",
+            "duration": 89,
+            "session": 8,
+            "active_duration": 3
+        }
+    },
+    {
+        "pk": 42,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:40:03.920Z",
+            "path": "/test/",
+            "duration": 51,
+            "session": 8,
+            "active_duration": 6
+        }
+    },
+    {
+        "pk": 43,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:40:55.470Z",
+            "path": "/test/",
+            "duration": 4,
+            "session": 8,
+            "active_duration": 3
+        }
+    },
+    {
+        "pk": 44,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:41:00.350Z",
+            "path": "/test/",
+            "duration": 25,
+            "session": 8,
+            "active_duration": 1
+        }
+    },
+    {
+        "pk": 45,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:41:25.460Z",
+            "path": "/test/",
+            "duration": 24,
+            "session": 8,
+            "active_duration": 22
+        }
+    },
+    {
+        "pk": 46,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:41:49.968Z",
+            "path": "/test/",
+            "duration": 17,
+            "session": 8,
+            "active_duration": 7
+        }
+    },
+    {
+        "pk": 47,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:42:07.495Z",
+            "path": "/test/",
+            "duration": 9,
+            "session": 8,
+            "active_duration": 4
+        }
+    },
+    {
+        "pk": 48,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:42:17.074Z",
+            "path": "/test/",
+            "duration": 14,
+            "session": 8,
+            "active_duration": 13
+        }
+    },
+    {
+        "pk": 49,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:42:31.463Z",
+            "path": "/test/",
+            "duration": 14,
+            "session": 8,
+            "active_duration": 6
+        }
+    },
+    {
+        "pk": 50,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:42:46.010Z",
+            "path": "/test/",
+            "duration": 11,
+            "session": 8,
+            "active_duration": 6
+        }
+    },
+    {
+        "pk": 51,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:42:57.346Z",
+            "path": "/test/",
+            "duration": 9,
+            "session": 8,
+            "active_duration": 6
+        }
+    },
+    {
+        "pk": 52,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-08T21:43:07.102Z",
+            "path": "/test/",
+            "duration": 0,
+            "session": 8,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 53,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-09T11:35:05.307Z",
+            "path": "/test/",
+            "duration": 6,
+            "session": 9,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 54,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-09T11:35:11.627Z",
+            "path": "/test/",
+            "duration": 40,
+            "session": 9,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 55,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-09T11:35:51.704Z",
+            "path": "/test/",
+            "duration": 57,
+            "session": 9,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 56,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-09T11:36:49.440Z",
+            "path": "/test/",
+            "duration": 15,
+            "session": 9,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 57,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-09T11:37:04.985Z",
+            "path": "/test/",
+            "duration": 27,
+            "session": 9,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 58,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-09T11:37:32.656Z",
+            "path": "/test/",
+            "duration": 18,
+            "session": 9,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 59,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-09T11:37:50.812Z",
+            "path": "/test/",
+            "duration": 89,
+            "session": 9,
+            "active_duration": 18
+        }
+    },
+    {
+        "pk": 60,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-09T11:39:20.033Z",
+            "path": "/test/",
+            "duration": 125,
+            "session": 9,
+            "active_duration": 2
+        }
+    },
+    {
+        "pk": 61,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-09T11:41:25.155Z",
+            "path": "/test/",
+            "duration": 78,
+            "session": 9,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 62,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-09T11:42:43.940Z",
+            "path": "/test/",
+            "duration": 8,
+            "session": 9,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 63,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-09T11:42:52.666Z",
+            "path": "/test/",
+            "duration": 316,
+            "session": 9,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 64,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-09T11:48:09.510Z",
+            "path": "/test/",
+            "duration": 26,
+            "session": 9,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 65,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-09T11:48:35.865Z",
+            "path": "/test/",
+            "duration": 0,
+            "session": 9,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 66,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-10T17:59:44.525Z",
+            "path": "/test/",
+            "duration": 0,
+            "session": 10,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 67,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-12T20:07:16.302Z",
+            "path": "/test/",
+            "duration": 6,
+            "session": 11,
+            "active_duration": 5
+        }
+    },
+    {
+        "pk": 68,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-12T20:07:22.383Z",
+            "path": "/test2/",
+            "duration": 10,
+            "session": 11,
+            "active_duration": 6
+        }
+    },
+    {
+        "pk": 69,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-12T20:07:32.890Z",
+            "path": "/test/",
+            "duration": 14,
+            "session": 11,
+            "active_duration": 6
+        }
+    },
+    {
+        "pk": 70,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-12T20:07:47.863Z",
+            "path": "/test/",
+            "duration": 0,
+            "session": 11,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 71,
+        "model": "core.pageview",
+        "fields": {
+            "view_timestamp": "2014-05-12T20:46:03.819Z",
+            "path": "/test/",
+            "duration": 0,
+            "session": 12,
+            "active_duration": 0
+        }
+    },
+    {
+        "pk": 1,
+        "model": "core.trackedcontent",
+        "fields": {
+            "website": 1,
+            "name": "test_name2"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "core.trackedcontent",
+        "fields": {
+            "website": 1,
+            "name": "test_name"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "core.trackedcontent",
+        "fields": {
+            "website": 1,
+            "name": "test_name3"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "core.trackedcontent",
+        "fields": {
+            "website": 1,
+            "name": "loremipsum"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "core.trackedcontent",
+        "fields": {
+            "website": 1,
+            "name": "Lorem ipsum"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 1,
+            "page_view": 1,
+            "timestamp": "2014-05-12T13:17:04.002Z"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 4,
+            "page_view": 1,
+            "timestamp": "2014-05-09T13:17:04.008Z"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 1,
+            "page_view": 2,
+            "timestamp": "2014-05-10T13:17:04.012Z"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 1,
+            "page_view": 3,
+            "timestamp": "2014-05-10T13:17:04.014Z"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 1,
+            "page_view": 13,
+            "timestamp": "2014-05-11T13:17:04.015Z"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 3,
+            "duration": 1,
+            "page_view": 15,
+            "timestamp": "2014-05-10T13:17:04.016Z"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 2,
+            "page_view": 15,
+            "timestamp": "2014-05-11T13:17:04.018Z"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 1,
+            "page_view": 15,
+            "timestamp": "2014-05-11T13:17:04.019Z"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 1,
+            "page_view": 16,
+            "timestamp": "2014-05-09T13:17:04.020Z"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 3,
+            "page_view": 21,
+            "timestamp": "2014-05-11T13:17:04.021Z"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 2,
+            "page_view": 28,
+            "timestamp": "2014-05-11T13:17:04.022Z"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 2,
+            "page_view": 30,
+            "timestamp": "2014-05-11T13:17:04.023Z"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 8,
+            "page_view": 30,
+            "timestamp": "2014-05-11T13:17:04.024Z"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 8,
+            "page_view": 31,
+            "timestamp": "2014-05-11T13:17:04.025Z"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 5,
+            "page_view": 31,
+            "timestamp": "2014-05-10T13:17:04.026Z"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 7,
+            "page_view": 32,
+            "timestamp": "2014-05-12T13:17:04.027Z"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 2,
+            "page_view": 32,
+            "timestamp": "2014-05-10T13:17:04.028Z"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 3,
+            "page_view": 33,
+            "timestamp": "2014-05-11T13:17:04.029Z"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 2,
+            "page_view": 33,
+            "timestamp": "2014-05-12T13:17:04.030Z"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 1,
+            "page_view": 34,
+            "timestamp": "2014-05-12T13:17:04.031Z"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 1,
+            "page_view": 34,
+            "timestamp": "2014-05-09T13:17:04.032Z"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 3,
+            "page_view": 35,
+            "timestamp": "2014-05-12T13:17:04.033Z"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 5,
+            "page_view": 36,
+            "timestamp": "2014-05-12T13:17:04.034Z"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 2,
+            "page_view": 37,
+            "timestamp": "2014-05-11T13:17:04.035Z"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 5,
+            "page_view": 37,
+            "timestamp": "2014-05-12T13:17:04.036Z"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 2,
+            "page_view": 38,
+            "timestamp": "2014-05-12T13:17:04.037Z"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 3,
+            "page_view": 38,
+            "timestamp": "2014-05-12T13:17:04.038Z"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 3,
+            "duration": 6,
+            "page_view": 40,
+            "timestamp": "2014-05-10T13:17:04.040Z"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 8,
+            "page_view": 40,
+            "timestamp": "2014-05-09T13:17:04.041Z"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 3,
+            "page_view": 41,
+            "timestamp": "2014-05-10T13:17:04.042Z"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 3,
+            "duration": 2,
+            "page_view": 42,
+            "timestamp": "2014-05-10T13:17:04.043Z"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 5,
+            "page_view": 42,
+            "timestamp": "2014-05-11T13:17:04.044Z"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 1,
+            "page_view": 42,
+            "timestamp": "2014-05-10T13:17:04.044Z"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 1,
+            "page_view": 43,
+            "timestamp": "2014-05-10T13:17:04.045Z"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 3,
+            "page_view": 43,
+            "timestamp": "2014-05-09T13:17:04.046Z"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 2,
+            "page_view": 45,
+            "timestamp": "2014-05-10T13:17:04.047Z"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 7,
+            "page_view": 46,
+            "timestamp": "2014-05-10T13:17:04.049Z"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 2,
+            "page_view": 47,
+            "timestamp": "2014-05-12T13:17:04.051Z"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 1,
+            "page_view": 48,
+            "timestamp": "2014-05-12T13:17:04.052Z"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 6,
+            "page_view": 49,
+            "timestamp": "2014-05-11T13:17:04.053Z"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 4,
+            "page_view": 50,
+            "timestamp": "2014-05-11T13:17:04.055Z"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 6,
+            "page_view": 51,
+            "timestamp": "2014-05-11T13:17:04.057Z"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 1,
+            "page_view": 59,
+            "timestamp": "2014-05-11T13:17:04.058Z"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 2,
+            "duration": 2,
+            "page_view": 60,
+            "timestamp": "2014-05-11T13:17:04.059Z"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 5,
+            "page_view": 67,
+            "timestamp": "2014-05-12T13:17:04.061Z"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 4,
+            "duration": 3,
+            "page_view": 67,
+            "timestamp": "2014-05-09T13:17:04.062Z"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 5,
+            "duration": 2,
+            "page_view": 68,
+            "timestamp": "2014-05-12T13:17:04.063Z"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 1,
+            "duration": 4,
+            "page_view": 69,
+            "timestamp": "2014-05-10T13:17:04.064Z"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "core.contentinteraction",
+        "fields": {
+            "content": 4,
+            "duration": 4,
+            "page_view": 69,
+            "timestamp": "2014-05-09T13:17:04.065Z"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "accounts.analyticsuser",
+        "fields": {
+            "is_active": true,
+            "password": "pbkdf2_sha256$12000$7yk5wMsIagGw$cFAnhTZx4m2Nrcjkgz4psBmSZ3vfbLGoy9Ekkyja76A=",
+            "last_login": "2014-05-13T08:02:27.142Z",
+            "email": "admin@gmail.com"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "accounts.analyticsuser",
+        "fields": {
+            "is_active": true,
+            "password": "pbkdf2_sha256$12000$lb32Sz1anZAY$Fnl1YLdQH7VyXlX8wNH887jbaJx3uudhqbxPJ4KDGqw=",
+            "last_login": "2014-05-13T08:11:30.511Z",
+            "email": "test2@test.com"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "core.website",
+        "fields": {
+            "url": "http://google.si/",
+            "timezone": "Europe/Ljubljana",
+            "user": 1,
+            "name": "Test website"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "core.website",
+        "fields": {
+            "url": "http://google.si/",
+            "timezone": "Africa/Abidjan",
+            "user": 1,
+            "name": "213"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "core.website",
+        "fields": {
+            "url": "http://google.si/",
+            "timezone": "Europe/Ljubljana",
+            "user": 1,
+            "name": "Miha"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "core.website",
+        "fields": {
+            "url": "http://google.si/",
+            "timezone": "Europe/Ljubljana",
+            "user": 1,
+            "name": "Miha"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_logentry",
+            "name": "Can add log entry",
+            "content_type": 1
+        }
+    },
+    {
+        "pk": 2,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_logentry",
+            "name": "Can change log entry",
+            "content_type": 1
+        }
+    },
+    {
+        "pk": 3,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_logentry",
+            "name": "Can delete log entry",
+            "content_type": 1
+        }
+    },
+    {
+        "pk": 4,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_permission",
+            "name": "Can add permission",
+            "content_type": 2
+        }
+    },
+    {
+        "pk": 5,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_permission",
+            "name": "Can change permission",
+            "content_type": 2
+        }
+    },
+    {
+        "pk": 6,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_permission",
+            "name": "Can delete permission",
+            "content_type": 2
+        }
+    },
+    {
+        "pk": 7,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_group",
+            "name": "Can add group",
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 8,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_group",
+            "name": "Can change group",
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 9,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_group",
+            "name": "Can delete group",
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 10,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_contenttype",
+            "name": "Can add content type",
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 11,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_contenttype",
+            "name": "Can change content type",
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 12,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_contenttype",
+            "name": "Can delete content type",
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 13,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_session",
+            "name": "Can add session",
+            "content_type": 5
+        }
+    },
+    {
+        "pk": 14,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_session",
+            "name": "Can change session",
+            "content_type": 5
+        }
+    },
+    {
+        "pk": 15,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_session",
+            "name": "Can delete session",
+            "content_type": 5
+        }
+    },
+    {
+        "pk": 16,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_keymap",
+            "name": "Can add key map",
+            "content_type": 6
+        }
+    },
+    {
+        "pk": 17,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_keymap",
+            "name": "Can change key map",
+            "content_type": 6
+        }
+    },
+    {
+        "pk": 18,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_keymap",
+            "name": "Can delete key map",
+            "content_type": 6
+        }
+    },
+    {
+        "pk": 19,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_website",
+            "name": "Can add website",
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 20,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_website",
+            "name": "Can change website",
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 21,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_website",
+            "name": "Can delete website",
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 22,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_trackeruser",
+            "name": "Can add tracker user",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 23,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_trackeruser",
+            "name": "Can change tracker user",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 24,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_trackeruser",
+            "name": "Can delete tracker user",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 25,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_session",
+            "name": "Can add session",
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 26,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_session",
+            "name": "Can change session",
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 27,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_session",
+            "name": "Can delete session",
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 28,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_pageview",
+            "name": "Can add page view",
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 29,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_pageview",
+            "name": "Can change page view",
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 30,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_pageview",
+            "name": "Can delete page view",
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 31,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_trackedcontent",
+            "name": "Can add tracked content",
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 32,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_trackedcontent",
+            "name": "Can change tracked content",
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 33,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_trackedcontent",
+            "name": "Can delete tracked content",
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 34,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_contentinteraction",
+            "name": "Can add content interaction",
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 35,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_contentinteraction",
+            "name": "Can change content interaction",
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 36,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_contentinteraction",
+            "name": "Can delete content interaction",
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 37,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_analyticsuser",
+            "name": "Can add analytics user",
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 38,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_analyticsuser",
+            "name": "Can change analytics user",
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 39,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_analyticsuser",
+            "name": "Can delete analytics user",
+            "content_type": 13
+        }
+    }
+]

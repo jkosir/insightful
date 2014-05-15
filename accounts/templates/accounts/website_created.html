@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+{% block css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'core/prettify/prettify.css' %}"/>
+{% endblock %}
+{% block footjs %}
+
+{{ block.super }}
+    <script src="{% static 'core/prettify/prettify.js' %}"></script>
+    <script>
+    $(document).ready(function(){
+        prettyPrint();
+    })
+    </script>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Almost there! </h3>
+                    </div>
+                    <div class="panel-body">
+                        <h2>Tracking code</h2>
+                        <p>Add a small portion of javascript code to your website:</p>
+                       <pre class="prettyprint">
+&lt;script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.1/jquery.js"&gt;&lt;/script&gt;
+&lt;!-- Line above not required if your website already has jQuery --&gt;
+&lt;script type="text/javascript" src="{{ jspath }}"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    insightful.init({url: '{{ report }}', id: {{ id }}&#125;)
+&lt;/script&gt;</pre>
+                        <h2>Tracking specific content</h2>
+                        <p>Add <code>data-track-name="Some name"</code> attribute to elements you wish to track.</p>
+                        <a href="{% url 'accounts:website_list' %}" class="btn btn-lg btn-primary pull-right">Back to my websites</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

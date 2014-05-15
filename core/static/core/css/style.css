@@ -1,0 +1,116 @@
+body {
+    background: url('../img/grey.png') fixed;
+    padding-top: 70px;
+}
+
+a {
+    /* Remove outline after clicking links*/
+    outline: 0 !important;
+}
+
+.stripe {
+    padding: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #fff;
+}
+
+.stripe h1,
+.stripe .h1 {
+    color: inherit;
+}
+
+.container .stripe {
+    border-radius: 6px;
+}
+
+.stripe .container {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .stripe {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .container .stripe {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+}
+
+.span-icon {
+    min-width: 70px;
+    text-align: center;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.margin-right {
+    margin-right: 5px;
+}
+
+.panel > ul.list-group:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.badge {
+    background-color: #999;
+}
+
+.panel {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.panel-heading {
+    border-bottom: 1px solid #ddd;
+}
+
+.multiselect-margin {
+    margin-bottom: 15px;
+}
+
+#page-content-wrapper {
+    margin-top: 4px;
+}
+
+.featurette-small h2 {
+    margin-top: 60px !important;
+}
+
+.featurette-small > div {
+    height: 170px;
+}
+
+.featurette-small .btn-wrapper {
+    margin-top: 65px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.featurette-small .btn-container {
+    width: 80%;
+    display: inline-block;
+}
+
+.btn-lg {
+    font-size: 16px;
+}
+
+.btn {
+    text-transform: none;
+}
+
+.panel-visitors ul {
+    border-right: 2px solid #ddd;
+    border-left: 2px solid #ddd
+}
+.panel-visitors ul>li:first-child {
+    font-weight: bold;
+}
+

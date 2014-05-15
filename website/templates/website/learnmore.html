@@ -1,0 +1,226 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+
+{% block js %}
+    {{ block.super }}
+    <script src="{% static 'core/lib/highcharts.js' %}"></script>
+    <script src="{% static 'core/js/highcharts-config.js' %}"></script>
+    <script>
+        var date = new Date('2014-05-12').getTime();
+        $(document).ready(function () {
+            //Line
+            $('#container').highcharts({
+                title: {
+                    text: null
+                },
+                xAxis: {
+                    type: 'datetime'
+                },
+                yAxis: {
+                    title: {
+                        text: null
+                    },
+                    plotLines: [
+                        {
+                            value: 0,
+                            width: 1,
+                            color: '#808080'
+                        }
+                    ]
+                },
+                credits: false,
+                tooltip: {
+
+                    shared: true
+                },
+                series: [
+
+                    {
+                        name: 'Page views',
+                        data: [114, 105, 103, 104, 109],
+                        pointStart: date,
+
+                        pointInterval: 24 * 3600 * 1000 // one day
+
+                    },
+                    {
+                        name: 'View duration',
+                        data: [78.2, 85.8, 83.4, 87.2, 85.1],
+                        pointStart: date,
+                        pointInterval: 24 * 3600 * 1000, // one day
+                        tooltip: {
+                            valueSuffix: ' seconds'
+                        }
+                    },
+                    {
+                        name: 'Engaged time',
+                        data: [65.4, 69.8, 64.1, 78.7, 77.3],
+                        pointStart: date,
+                        pointInterval: 24 * 3600 * 1000, // one day
+                        tooltip: {
+                            valueSuffix: ' seconds'
+                        }
+                    }
+                ]
+            });
+
+            //PIE
+            $('#pie').highcharts({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false
+                },
+                title: {
+                    text: null
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.y} seconds</b> <br>Percentage: <b> {point.percentage:.1f} %</b>'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: false
+                        },
+                        showInLegend: true
+                    }
+                },
+                credits: false,
+                series: [
+                    {
+                        type: 'pie',
+                        name: 'Engaged time',
+                        data: [
+                            ['Article 1', 32.2],
+                            ['Article 2', 24.7],
+                            {
+                                name: 'Article 3',
+                                sliced: true,
+                                y: 11.8,
+                                selected: true
+                            },
+                            ['Other', 7.3]
+
+                        ]
+                    }
+                ]
+            });
+        });
+
+    </script>
+{% endblock %}
+
+{% block css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'core/css/learnmore.css' %}"/>
+    <link rel="stylesheet" href="{% static 'core/css/cover2.css' %}"/>
+{% endblock %}
+
+{% block navbar %}
+    {# No navbar #}
+{% endblock %}
+
+{% block content %}
+
+
+
+    <div class="container marketing">
+        <div class="masthead clearfix">
+            <div class="inner">
+                <h3 class="masthead-brand">Insightful</h3>
+                <ul class="nav masthead-nav">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li class="active"><a href="{% url 'learnmore' %}">Learn more</a></li>
+                    <li><a href="{% url 'accounts:website_list' %}">Demo</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- START THE FEATURETTES -->
+
+
+        <div class="panel panel default">
+            <div class="panel-body">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Engaged time. <span
+                                class="text-muted">The whole story. </span></h2>
+
+                        <p class="lead">Counting page views is just the beginning. They only tell how many people
+                            loaded the page. Engaged time lets you know how much time they use it for.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="featurette-content" id="container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel default">
+            <div class="panel-body">
+
+                <div class="row featurette">
+                    <div class="col-md-5">
+                        <div id="pie" class="featurette-content"></div>
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Content tracking. <span
+                                class="text-muted">Go even deeper.</span></h2>
+
+                        <p class="lead">Don't stop at measuring engaged time. Find out what content your visitors are
+                            reading and
+                            how it compares to other parts of the page.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel default">
+            <div class="panel-body">
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Mobile devices? <span class="text-muted">Got it covered.</span>
+                        </h2>
+
+                        <p class="lead">Amount of traffic from mobile devices is increasing. Insightful is built with
+                            that in mind and provides equally accurate analysis for visitors from mobile devices.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="featurette-content" style=" text-align: center">
+                            <i class="fa fa-mobile" style="line-height: 500px; font-size: 500px"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel default">
+            <div class="panel-body">
+
+                <div class="row featurette featurette-small">
+                    <div class="col-md-5">
+                        <span class="btn-wrapper">
+                            <span class="btn-container">
+                                <a class="btn btn-primary btn-block btn-lg"
+                                   href="http://insightful-demo.herokuapp.com{% url 'accounts:website_list' %}">
+                                    View demo
+                                   </a>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Demo. <span class="text-muted">See it for yourself.</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div><!-- /.container -->
+
+{% endblock %}
