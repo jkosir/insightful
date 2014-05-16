@@ -23,6 +23,7 @@ SECRET_KEY = 'gh!6wp01q)8bl(7bw(u2u0_gt&un=90ei^4gb7wz-ca*^1u(a('
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+COMPRESS_ENABLED = False  # Compressor doesn't play well with single dyno heroku setup
 
 TEMPLATE_DEBUG = DEBUG
 
