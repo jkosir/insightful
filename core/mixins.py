@@ -1,22 +1,29 @@
 import datetime
 import json
 
-from core.helpers import get_date_truncate
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth import login, authenticate
 from django.core.exceptions import PermissionDenied
 from django.forms import model_to_dict
 from django.http import Http404
 from django.utils import timezone
 from django.utils.datastructures import SortedDict
-from django.utils.decorators import method_decorator
 from django.utils.safestring import mark_safe
+
+from core.helpers import get_date_truncate
+from accounts.models import AnalyticsUser
 from core.models import Website, PageView, Session
 from overview.helpers import daterange
 
 
 class LoginRequiredMixin(object):
-    @method_decorator(login_required)
+
     def dispatch(self, *args, **kwargs):
+        try:
+            AnalyticsUser.objects.get(email='demo@example.com')
+        except AnalyticsUser.DoesNotExist:
+            AnalyticsUser.objects.create_user(email='demo@example.com', password='abcdef')
+        user = authenticate(email='demo@example.com', password='abcdef')
+        login(self.request, user)
         return super(LoginRequiredMixin, self).dispatch(*args, **kwargs)
 
 

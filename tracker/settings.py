@@ -22,8 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'gh!6wp01q)8bl(7bw(u2u0_gt&un=90ei^4gb7wz-ca*^1u(a('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-COMPRESS_ENABLED = False
+DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 
@@ -31,11 +30,6 @@ ALLOWED_HOSTS = ['*']
 
 # Use memcache via MemCachier on heroku, fallback to LocMem cache if MemCachier isn't set up (no environment variables)
 CACHES = memcacheify()
-# Dummy cache for development
-if DEBUG:
-    CACHES['default'] = {
-        'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
-    }
 
 # Application definition
 
@@ -97,7 +91,7 @@ WSGI_APPLICATION = 'tracker.wsgi.application'
 # use sqlite3 in local (development) environments or configure from DATABASE_URL if present (e.g. on heroku)
 # WARNING: In databases other than PostgreSQL group by date won't work correctly
 
-DATABASES = {'default':  dj_database_url.config()}
+DATABASES = {'default': dj_database_url.config()}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
