@@ -113,4 +113,7 @@ a {
 .panel-visitors ul>li:first-child {
     font-weight: bold;
 }
+.btn.btn-block.btn-panel:hover{
+    margin-top: 16px;
+}
 
