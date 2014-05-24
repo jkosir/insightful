@@ -3,7 +3,7 @@ from django.views.generic import View
 
 from djangular.views.mixins import JSONResponseMixin, allowed_action
 from core.mixins import AngularAppMixin, ChartsUtilityMixin
-from core.helpers import cache_cbv_method_until_midnight
+from core.helpers import cache_until_midnight
 from core.models import ContentInteraction
 
 
@@ -13,7 +13,7 @@ class EngagementJSONView(AngularAppMixin, ChartsUtilityMixin, JSONResponseMixin,
     def get_data(self, in_data):
         return {'content': self.tracked_content_avg_duration()}
 
-    @cache_cbv_method_until_midnight
+    @cache_until_midnight
     def tracked_content_avg_duration(self):
         interactions = ContentInteraction.objects.values_list('page_view__path', 'content__name')
         interactions = interactions.filter(page_view__view_timestamp__gte=self.past_timestamp(days=5))

@@ -3,7 +3,7 @@ from django.views.generic import View
 from djangular.views.mixins import allowed_action, JSONResponseMixin
 
 from core.mixins import AngularAppMixin, ChartsUtilityMixin
-from core.helpers import cache_cbv_method_until_midnight
+from core.helpers import cache_until_midnight
 
 
 class OverviewJSONView(AngularAppMixin, ChartsUtilityMixin, JSONResponseMixin, View):
@@ -25,7 +25,7 @@ class OverviewJSONView(AngularAppMixin, ChartsUtilityMixin, JSONResponseMixin, V
     def unique_visitor_count_today(self):
         return len(set(self.sessions_today.values_list('user_id')))  # Turn list into a set to remove duplicates
 
-    @cache_cbv_method_until_midnight
+    @cache_until_midnight
     def mobile_percent(self):
         pageviews = self.pageviews.filter(view_timestamp__gt=self.past_timestamp(days=5))
         if len(pageviews) == 0:

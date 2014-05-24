@@ -7,17 +7,20 @@ from django.db import connection
 from django.utils.encoding import iri_to_uri
 
 
-def cache_cbv_method_until_midnight(method):
+def cache_until_midnight(method):
     """
     Caches a CBV (class based view) method until local midnight
     Used for calculations that don't use today's data (e.g. monthly chart)
 
-    Cache key is built from module name, method name and request path
+    Requires ChartUtilityMixin to access current website's timezone
+
+    Cache key is built from module name, method name and
+    request path (which must include unique identifier, e.g. website id)
     """
 
     @wraps(method)
     def wrapped(self, *args, **kwargs):
-        key = '{0}.{1}():{2}'.format(method.__module__, method.__name__, iri_to_uri(self.request.get_full_path()))
+        key = 'django.{0}.{1}():{2}'.format(method.__module__, method.__name__, iri_to_uri(self.request.get_full_path()))
         seconds = self.seconds_until_midnight()
 
         result = cache.get(key)

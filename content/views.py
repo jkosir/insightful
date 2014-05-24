@@ -3,7 +3,7 @@ from django.views.generic import View
 
 from djangular.views.mixins import JSONResponseMixin, allowed_action
 from core.mixins import AngularAppMixin, ChartsUtilityMixin
-from core.helpers import cache_cbv_method_until_midnight
+from core.helpers import cache_until_midnight
 from core.models import ContentInteraction
 
 
@@ -37,7 +37,7 @@ class ContentJSONView(AngularAppMixin, ChartsUtilityMixin, JSONResponseMixin, Vi
                                   'timestamp',
                                   Avg('duration'))
 
-    @cache_cbv_method_until_midnight
+    @cache_until_midnight
     def interaction_history(self):
         start_date = None
         data = {}

@@ -2,7 +2,7 @@ from django.db.models import Sum, Avg, Count
 from django.views.generic import View
 
 from djangular.views.mixins import allowed_action, JSONResponseMixin
-from core.helpers import cache_cbv_method_until_midnight
+from core.helpers import cache_until_midnight
 from core.mixins import AngularAppMixin, ChartsUtilityMixin
 
 
@@ -43,7 +43,7 @@ class VisitorsJSONView(AngularAppMixin, ChartsUtilityMixin, JSONResponseMixin, V
         }
         return data
 
-    @cache_cbv_method_until_midnight
+    @cache_until_midnight
     def yesterday_report(self):
         return {'visitors': len(self.sessions_yesterday),
                 'pageviews': len(self.pageviews_yesterday),
@@ -52,7 +52,7 @@ class VisitorsJSONView(AngularAppMixin, ChartsUtilityMixin, JSONResponseMixin, V
                 'avg_engagement': self.sessions_yesterday.annotate(sum=Sum('pageview__active_duration')).aggregate(avg=Avg('sum'))['avg'],
                 'date': self.past_timestamp(days=1)}
 
-    @cache_cbv_method_until_midnight
+    @cache_until_midnight
     def countries(self):
         sessions = self.sessions.filter(timestamp__gt=self.past_timestamp(days=5))
         values = sessions.values('user__country_code', 'user__country_name')
@@ -65,7 +65,7 @@ class VisitorsJSONView(AngularAppMixin, ChartsUtilityMixin, JSONResponseMixin, V
 
         return list(data)
 
-    @cache_cbv_method_until_midnight
+    @cache_until_midnight
     def inbound_outbound_links(self, inbound=True):
         paths = {}
         sessions = self.sessions.prefetch_related('pageview_set').filter(timestamp__gt=self.past_timestamp(days=5),
