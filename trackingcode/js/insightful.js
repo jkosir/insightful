@@ -1,4 +1,3 @@
-
 var insightful = (function () {
     'use strict';
     var apiURL,
@@ -14,19 +13,21 @@ var insightful = (function () {
          */
         submitReport();
 
-        /*
-         Add event listeners for tracking interaction time
-         */
-        addEventListener(document, 'keydown', contentWatch);
-        addEventListener(document, 'click', contentWatch);
-        addEventListener(window, 'mousemove', contentWatch);
-        addEventListener(window, 'scroll', contentWatch);
 
         /*
-         Event listeners for specific content parts (everything with data-track-name attribute)
          Add on document.ready to ensure content has finished loading
          */
         $(document).ready(function () {
+            /*
+             Add event listeners for tracking interaction time
+             */
+            addEventListener(document, 'keydown', contentWatch);
+            addEventListener(document, 'click', contentWatch);
+            addEventListener(window, 'mousemove', contentWatch);
+            addEventListener(window, 'scroll', contentWatch);
+            /*
+             Event listeners for specific content parts (everything with data-track-name attribute)
+             */
             $('[data-track-name]').each(function () {
                 var events = ['click', 'mousemove', 'blur', 'focus', 'keydown', 'mouseenter'];
                 for (var i = 0; i < events.length; i++) {
