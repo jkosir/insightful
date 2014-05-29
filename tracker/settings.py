@@ -31,7 +31,7 @@ TEMPLATE_DEBUG = DEBUG
 ALLOWED_HOSTS = ['*']
 
 # Use memcache via MemCachier on heroku, fallback to LocMem cache if MemCachier isn't set up (no environment variables)
-CACHES = memcacheify()
+# CACHES = memcacheify()
 
 # Application definition
 
