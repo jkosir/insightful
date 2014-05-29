@@ -56,7 +56,7 @@ class VisitorsJSONView(AngularAppMixin, ChartsUtilityMixin, JSONResponseMixin, V
     def countries(self):
         sessions = self.sessions.filter(timestamp__gt=self.past_timestamp(days=5))
         values = sessions.values('user__country_code', 'user__country_name')
-        data = values.annotate(count=Count('user__country_code')).order_by('count')
+        data = values.annotate(count=Count('user__country_code')).order_by('-count')
 
         # Rename dictionary keys
         for element in data:
