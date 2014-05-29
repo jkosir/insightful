@@ -81,7 +81,7 @@ class VisitorsJSONView(AngularAppMixin, ChartsUtilityMixin, JSONResponseMixin, V
                 paths[view_path] += 1
             else:
                 paths[view_path] = 1
-        return sorted(paths.items(), key=operator.itemgetter(1))
+        return sorted(paths.items(), key=operator.itemgetter(1), reverse=True)
 
 
 
