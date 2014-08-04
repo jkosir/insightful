@@ -11,10 +11,10 @@ Installation
 ============
 #### Heroku
 
-1. Install [heroku toolbelt](https://devcenter.heroku.com/articles/quickstart)
-2. Clone this repository `git clone git@github.com:dasf/insightful.git`
-3. Create heroku app `heroku create`
-4. Push to heroku `git push heroku master`
+1. Install [heroku toolbelt](https://devcenter.heroku.com/articles/quickstart) and [git](http://git-scm.com/)
+2. Clone this repository: `git clone git@github.com:dasf/insightful.git`
+3. Create heroku app: `heroku create`
+4. Push to heroku: `git push heroku master`
 
 #### Optional
 * Install memcachier addon for better performance `heroku addons:add memcachier`
