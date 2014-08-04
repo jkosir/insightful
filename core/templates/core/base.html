@@ -83,8 +83,8 @@
                             </ul>
                         </li>
                      {% else %}
-                        <li><a href="#">Register</a></li>
-                        <li><a href="#">Sign in</a></li>
+                        <li><a href="{% url 'accounts:register' %}">Register</a></li>
+                        <li><a href="{% url 'accounts:login' %}">Sign in</a></li>
                     {% endif %}
                 </ul>
             </div>
