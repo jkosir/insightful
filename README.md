@@ -14,9 +14,7 @@ Installation
 1. Install [heroku toolbelt](https://devcenter.heroku.com/articles/quickstart)
 2. Clone this repository `git clone git@github.com:dasf/insightful.git`
 3. Create heroku app `heroku create`
-4. Add heroku remote url to repository `heroku git:remote -a "your application name"`
-5. Push to heroku `git push heroku master`
-6. Run syncdb `heroku run python manage.py syncdb --noinput`
+4. Push to heroku `git push heroku master`
 
 #### Optional
 * Install memcachier addon for better performance `heroku addons:add memcachier`
