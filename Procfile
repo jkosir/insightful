@@ -1,1 +1,1 @@
-web: gunicorn tracker.wsgi
+web: python manage.py syncdb --noinput; gunicorn tracker.wsgi
