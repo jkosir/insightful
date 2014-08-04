@@ -1,11 +1,8 @@
 angular.module('analyticsApp.controllers').controller('OverviewCtrl',
-    ['$scope', '$http', 'constants', function ($scope, $http, constants) {
+    ['$scope', '$http', 'constants', 'djangoUrl', function ($scope, $http, constants, djangoUrl) {
 
-        $http.post(constants.urls.overview, {action: 'get_data'}).success(function (out_data) {
-            $scope.data = out_data;
-        });
-
-
+        $http.post(djangoUrl.reverse('api:overview', [constants.website.id]),
+            {action: 'get_data'}).success(function (out_data) {
+                $scope.data = out_data;
+            });
     }]);
-
-

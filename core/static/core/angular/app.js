@@ -1,12 +1,13 @@
 var analyticsApp = angular.module('analyticsApp', [
-        'analyticsApp.controllers',
-        'analyticsApp.filters',
-        'ngCookies',
-        'ui.router',
-        'ui.bootstrap',
-        'chieffancypants.loadingBar',
-        'highcharts-ng'
-    ]).run(function ($http, $cookies) {
+    'analyticsApp.controllers',
+    'analyticsApp.filters',
+    'ngCookies',
+    'ng.django.urls',
+    'ui.router',
+    'ui.bootstrap',
+    'chieffancypants.loadingBar',
+    'highcharts-ng'
+]).run(function ($http, $cookies) {
     $http.defaults.headers.post['X-CSRFToken'] = $cookies.csrftoken;
     $http.defaults.xsrfCookieName = 'csrftoken';
     $http.defaults.xsrfHeaderName = 'X-CSRFToken';
