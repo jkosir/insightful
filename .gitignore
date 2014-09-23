@@ -45,3 +45,6 @@ venv/
 
 #Collected staticfiles + compressor cache
 staticfiles/
+
+#Vagrant
+.vagrant
