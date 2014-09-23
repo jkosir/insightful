@@ -45,6 +45,7 @@ class RegisterView(FormView):
 
     def form_valid(self, form):
         form.save()
+        messages.success(self.request, 'Registration successful, you can now sign in.')
         return super(RegisterView, self).form_valid(form)
 
 
