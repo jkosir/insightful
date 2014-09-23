@@ -3,5 +3,5 @@
     "description": "Web analytics app",
     "repository": "https://github.com/dasf/insightful",
     "keywords": ["django", "angular", "web", "analytics"],
-    "addons": ["memcachier:developer", "heroku-postgresql:hobby-dev"]
+    "addons": ["memcachier", "heroku-postgresql"]
 }
