@@ -1,6 +1,7 @@
 from django.core.urlresolvers import reverse
 from django.test.client import RequestFactory
 from django.test import TestCase
+from django.contrib.messages.storage.fallback import FallbackStorage
 
 from accounts.models import AnalyticsUser
 from accounts.views import RegisterView, LoginView, AddWebsiteView
@@ -18,6 +19,10 @@ class AccountsTestCase(TestCase):
             'password1': 'passwd',
             'password2': 'passwd'
         })
+        # RequestFactory doesn't support middlewares, need fallback storage for messages
+        setattr(request, 'session', 'session')
+        messages = FallbackStorage(request)
+        setattr(request, '_messages', messages)
         response = RegisterView.as_view()(request)
 
         user, created = AnalyticsUser.objects.get_or_create(email='testemail@gmail.com')
