@@ -9,7 +9,6 @@ After the installation, you'll be given a small bit of javascript code which sho
 
 Installation
 ============
-#### Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
