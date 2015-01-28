@@ -94,7 +94,7 @@ class ChartsUtilityMixin(object):
         Take given queryset, filter by website_id, group by day on timestamp_field
         with aggregation_function for last num_days days
         """
-        end_date = self.today_midnight() + timezone.timedelta(days=1)
+        end_date = self.today_midnight()
         truncate_date = get_date_truncate('day', timestamp_field, self.get_website().timezone)
 
         queryset = queryset.extra({'date': truncate_date})
@@ -109,7 +109,7 @@ class ChartsUtilityMixin(object):
         Add count=0 on dates that aren't present in in_data list from self.group_by_date()
         """
         data = SortedDict()
-        end_date = self.today_midnight().date() + timezone.timedelta(days=1)
+        end_date = self.today_midnight().date()
         for date in daterange(end_date - timezone.timedelta(days=num_days), end_date):
             for pair in in_data:
 
