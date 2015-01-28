@@ -1,5 +1,6 @@
 {% extends 'core/base.html' %}
 {% load staticfiles %}
+{% load djangular_tags %}
 
 {% block title %}<title ng-bind="'Insightful &mdash; ' + title">Insightful</title>{% endblock %}
 {% block base %}
@@ -32,6 +33,9 @@
 
     <script src="{% static 'core/js/highcharts-config.js' %}"></script>
     <script src="{% static 'core/lib/loading-bar.js' %}"></script>
+    <script src="{% static 'djangular/js/django-angular.js' %}"></script>
+    <script>angular.module('ng.django.urls').constant('patterns', {% load_djng_urls %});</script>
+
 
     <!-- Angular app -->
     <script src="{% static 'core/angular/app.js' %}"></script>
