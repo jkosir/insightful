@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/dasf/insightful.svg?branch=master)](https://travis-ci.org/dasf/insightful)
+[![Build Status](https://travis-ci.org/jkosir/insightful.svg?branch=master)](https://travis-ci.org/jkosir/insightful)
 
 Insightful
 ==========
